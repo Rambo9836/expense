@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Expense Tracker</h1>
+            <p>A CLI-based expense tracker that logs daily or monthly spending with categories like food, rent, books, and entertainment.</p>
+            <img src="https://i.ibb.co/f9zPq7m/download.jpg" alt="Expense Manager Logo" class="logo">
+        </div>
+    </header>
+    <main>
+        <section class="expense-tracker">
+            <div class="container">
+                <h2>Track Your Expenses</h2>
+                <div class="form-group">
+                    <label for="category">Category:</label>
+                    <input type="text" id="category" name="category">
+                </div>
+                <div class="form-group">
+                    <label for="amount">Amount:</label>
+                    <input type="number" id="amount" name="amount">
+                </div>
+                <button onclick="addExpense()">Add Expense</button>
+                <button onclick="viewReport()">View Report</button>
+                <button onclick="exportToCSV()">Export to CSV</button>
+                <pre id="report"></pre>
+            </div>
+        </section>
+        <section class="features">
+            <div class="container">
+                <h2>About the website</h2>
+                <h2>Features</h2>
+                <ul class="feature-list">
+                    <li><img src="https://i.ibb.co/9HDFt8W/b3f829b77eb7068789a98728e84f4c1c-removebg-preview.png" alt="arrow"> Track daily and monthly expenses</li>
+                    <li><img src="https://i.ibb.co/9HDFt8W/b3f829b77eb7068789a98728e84f4c1c-removebg-preview.png" alt="arrow"> Command-line interface for easy use</li>
+                    <li><img src="https://i.ibb.co/9HDFt8W/b3f829b77eb7068789a98728e84f4c1c-removebg-preview.png" alt="arrow"> Simple and efficient implementation</li>
+                    <li><img src="https://i.ibb.co/9HDFt8W/b3f829b77eb7068789a98728e84f4c1c-removebg-preview.png" alt="arrow"> Customizable categories for expenses</li>
+                    <li><img src="https://i.ibb.co/9HDFt8W/b3f829b77eb7068789a98728e84f4c1c-removebg-preview.png" alt="arrow"> Open-source and continuously improving</li>
+                    <li><img src="https://i.ibb.co/9HDFt8W/b3f829b77eb7068789a98728e84f4c1c-removebg-preview.png" alt="arrow"> Expense Tracker</li>
+                    <li><img src="https://i.ibb.co/9HDFt8W/b3f829b77eb7068789a98728e84f4c1c-removebg-preview.png" alt="arrow"> Export missed doses</li>
+                </ul>
+            </div>
+        </section>
+        <section class="how-it-works">
+            <div class="container">
+                <h2>How It Works</h2>
+                <ul class="feature-list">
+                    <li><img src="https://i.ibb.co/9HDFt8W/b3f829b77eb7068789a98728e84f4c1c-removebg-preview.png" alt="arrow"> <strong>Initialize the Tracker</strong>: Create a new instance of the `ExpenseTracker` using `ExpenseTracker::new()`.</li>
+                    <li><img src="https://i.ibb.co/9HDFt8W/b3f829b77eb7068789a98728e84f4c1c-removebg-preview.png" alt="arrow"> <strong>Add Expenses</strong>: Use the `add_expense` method to add a new expense. Provide a category (e.g., "food") and an amount.</li>
+                    <li><img src="https://i.ibb.co/9HDFt8W/b3f829b77eb7068789a98728e84f4c1c-removebg-preview.png" alt="arrow"> <strong>View Report</strong>: Call the `view_report` method to see a summary of all expenses categorized.</li>
+                    <li><img src="https://i.ibb.co/9HDFt8W/b3f829b77eb7068789a98728e84f4c1c-removebg-preview.png" alt="arrow"> <strong>Export to CSV</strong>: Use the `export_to_csv` method to export the expenses to a CSV file for easy sharing and record-keeping.</li>
+                    <li><img src="https://i.ibb.co/9HDFt8W/b3f829b77eb7068789a98728e84f4c1c-removebg-preview.png" alt="arrow"> <strong>Interactive CLI</strong>: The main function runs a loop allowing users to choose from options to add an expense, view a report, export to CSV, or exit the program.</li>
+                </ul>
+                <h3>Benefits:</h3>
+                <ul class="feature-list">
+                    <li><img src="https://i.ibb.co/9HDFt8W/b3f829b77eb7068789a98728e84f4c1c-removebg-preview.png" alt="arrow"> <strong>Efficiency</strong>: Quickly log expenses through a simple CLI interface.</li>
+                    <li><img src="https://i.ibb.co/9HDFt8W/b3f829b77eb7068789a98728e84f4c1c-removebg-preview.png" alt="arrow"> <strong>Customization</strong>: Easily categorize expenses as needed.</li>
+                    <li><img src="https://i.ibb.co/9HDFt8W/b3f829b77eb7068789a98728e84f4c1c-removebg-preview.png" alt="arrow"> <strong>Portability</strong>: Export data to CSV for easy access and sharing.</li>
+                    <li><img src="https://i.ibb.co/9HDFt8W/b3f829b77eb7068789a98728e84f4c1c-removebg-preview.png" alt="arrow"> <strong>User-Friendly</strong>: Intuitive and straightforward commands make tracking expenses hassle-free.</li>
+                </ul>
+            </div>
+        </section>
+        <section class="download-project">
+            <div class="container">
+                <h2>Download the Project</h2>
+                <ul class="feature-list">
+                    <li><img src="https://i.ibb.co/9HDFt8W/b3f829b77eb7068789a98728e84f4c1c-removebg-preview.png" alt="arrow"><strong> Get started by downloading the project from the repository:</strong></li>
+                    <li><img src="https://i.ibb.co/9HDFt8W/b3f829b77eb7068789a98728e84f4c1c-removebg-preview.png" alt="arrow"><a href="https://github.com" class="btn">View on GitHub</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <ul class="feature-list">
+                    <li><img src="https://i.ibb.co/9HDFt8W/b3f829b77eb7068789a98728e84f4c1c-removebg-preview.png" alt="arrow"><strong> If you have any questions or need assistance, feel free to contact me:</strong></li>
+                    <li><img src="https://i.ibb.co/9HDFt8W/b3f829b77eb7068789a98728e84f4c1c-removebg-preview.png" alt="arrow">pritam.pramanik@stud.th-deg.de</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Expense Tracker - A Rust Project.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
