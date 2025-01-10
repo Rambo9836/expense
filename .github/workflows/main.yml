@@ -34,6 +34,9 @@ jobs:
       - name: Build with Cross
         run: cross build --target ${{ matrix.target }} --release --verbose
 
+      - name: List Target Directory
+        run: ls -al target/${{ matrix.target }}/release/
+
       - name: Verify Build
         run: |
           if [ ! -f target/${{ matrix.target }}/release/$BINARY_NAME ]; then
