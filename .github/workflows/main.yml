@@ -1,4 +1,3 @@
-
 name: Release Statically Linked Rust Binary
 
 on:
@@ -35,6 +34,13 @@ jobs:
       - name: Build with Cross
         run: cross build --target ${{ matrix.target }} --release --verbose
 
+      - name: Verify Build
+        run: |
+          if [ ! -f target/${{ matrix.target }}/release/$BINARY_NAME ]; then
+            echo "Build failed: Binary not found"
+            exit 1
+          fi
+
       - name: Create Release Archive
         run: |
           mkdir -p release
@@ -58,4 +64,3 @@ jobs:
             *.zip
         env:
           GITHUB_TOKEN: ${{ secrets.COMMR }}
-
