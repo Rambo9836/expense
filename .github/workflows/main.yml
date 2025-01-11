@@ -66,4 +66,4 @@ jobs:
             *.tar.gz
             *.zip
         env:
-          GITHUB_TOKEN: ${{ secrets.COMMR }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
