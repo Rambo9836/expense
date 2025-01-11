@@ -16,7 +16,7 @@ jobs:
           - aarch64-unknown-linux-musl      # ARM Linux (musl)
 
     env:
-      BINARY_NAME: commr
+      BINARY_NAME: expense_tracker
 
     steps:
       - name: Checkout code
