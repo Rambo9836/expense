@@ -3,8 +3,8 @@ name: Release Statically Linked Rust Binary
 on:
   push:
     tags:
-      - 'v*'  # Trigger on tags like 'v1.0.0'
-  workflow_dispatch:
+      - "v*" # Trigger on tags like 'v1.0.0'
+  workflow_dispatch: # Manual trigger
 
 jobs:
   build:
@@ -12,11 +12,11 @@ jobs:
     strategy:
       matrix:
         target:
-          - x86_64-unknown-linux-musl       # Linux (musl)
-          - aarch64-unknown-linux-musl      # ARM Linux (musl)
+          - x86_64-unknown-linux-musl # Linux (musl)
+          - aarch64-unknown-linux-musl # ARM Linux (musl)
 
     env:
-      BINARY_NAME: expense_tracker
+      BINARY_NAME: fileorganizer-cli
 
     steps:
       - name: Checkout code
@@ -34,24 +34,14 @@ jobs:
       - name: Build with Cross
         run: cross build --target ${{ matrix.target }} --release --verbose
 
-      - name: List Target Directory
-        run: ls -al target/${{ matrix.target }}/release/
-
-      - name: Verify Build
-        run: |
-          if [ ! -f target/${{ matrix.target }}/release/$BINARY_NAME ]; then
-            echo "Build failed: Binary not found"
-            exit 1
-          fi
-
       - name: Create Release Archive
         run: |
           mkdir -p release
 
-          if [[ "${{ matrix.target }}" == *"windows"* ]]; then
+          if [[ "${{ matrix.target }}" == "windows" ]]; then
             cp target/${{ matrix.target }}/release/$BINARY_NAME.exe release/
             zip -r ${{ matrix.target }}.zip release
-          elif [[ "${{ matrix.target }}" == *"darwin"* ]]; then
+          elif [[ "${{ matrix.target }}" == "darwin" ]]; then
             cp target/${{ matrix.target }}/release/$BINARY_NAME release/
             tar -czvf ${{ matrix.target }}.tar.gz -C release $BINARY_NAME
           else
