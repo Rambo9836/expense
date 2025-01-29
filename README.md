@@ -17,6 +17,6 @@ Get started by downloading the project from the repository:
 
 [![View on GitHub](https://img.shields.io/badge/View%20on-GitHub-green?style=for-the-badge&logo=github)](your-github-repository-link)
 
-[![Download Binary](https://img.shields.io/badge/Download-Binary-green?style=for-the-badge)]([https://github.com/Rambo9836/expense/blob/main/expense_tracker](https://github.com/Rambo9836/expense/raw/refs/heads/main/expense_tracker))
+[![Download Binary](https://img.shields.io/badge/Download-Binary-green?style=for-the-badge)](https://github.com/Rambo9836/expense/raw/refs/heads/main/expense_tracker)
 
 
