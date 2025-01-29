@@ -36,4 +36,22 @@ Get started by downloading the project from the repository:
   Generate portable records for accounting/sharing
 - **🖥️ CLI Interface**  
   User-friendly terminal interface with menu navigation
+  ## 🚀 Future Prospects
+
+- **📈 Enhanced Visualization**  
+  Integrate ASCII charts/graphs for visual spending pattern analysis directly in CLI
+- **☁️ Cloud Sync**  
+  Add Dropbox/Google Drive integration for cross-device expense tracking
+- **🧠 Smart Categorization**  
+  Implement ML-powered auto-categorization using transaction descriptions
+- **🔔 Budget Alerts**  
+  Create configurable spending limit notifications with progress bars
+- **🔍 Advanced Filtering**  
+  Add date ranges, category combinations, and custom tags for granular reporting
+
+```rust
+// Potential Future Method Prototype
+tracker.set_budget("food", 300.00);
+tracker.enable_cloud_sync(SyncProvider::GoogleDrive);
+tracker.generate_insights(); // AI-powered spending trends
 
