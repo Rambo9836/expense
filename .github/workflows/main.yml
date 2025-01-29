@@ -16,7 +16,7 @@ jobs:
           - aarch64-unknown-linux-musl # ARM Linux (musl)
 
     env:
-      BINARY_NAME: fileorganizer-cli
+      BINARY_NAME: expense
 
     steps:
       - name: Checkout code
