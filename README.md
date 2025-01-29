@@ -6,11 +6,7 @@ A CLI-based expense tracker that logs daily or monthly spending with categories 
 
 ![Expense Tracker](https://imgur.com/Qgdhs5Q.png)
 
-## Features
-- Track expenses by category (Food, Rent, Books, Entertainment, etc.)
-- Log daily or monthly spending
-- View expense summaries
-- Simple and easy-to-use command-line interface (CLI)
+
 
 ## Download the Project
 Get started by downloading the project from the repository:
