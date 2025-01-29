@@ -4,7 +4,7 @@ Visit my website at - https://rambo9836.github.io/expense/
 
 A CLI-based expense tracker that logs daily or monthly spending with categories like food, rent, books, and entertainment.
 
-![Expense Tracker](![Expense Tracker](https://raw.githubusercontent.com/Rambo9836/expense/main/assets/Screenshot.png)
+![Expense Tracker](![Expense Tracker](https://raw.githubusercontent.com/Rambo9836/expense/Screenshot.png)
 )
 
 ## Features
