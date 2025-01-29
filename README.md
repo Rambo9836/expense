@@ -19,4 +19,16 @@ Get started by downloading the project from the repository:
 
 [![Download Binary](https://img.shields.io/badge/Download-Binary-green?style=for-the-badge)](https://github.com/Rambo9836/expense/raw/refs/heads/main/expense_tracker)
 
+## ✨ Features
+
+- **📥 Instant Tracker Initialization**  
+  Create a new tracker instance with zero configuration
+- **➕ Expense Logging**  
+  Add expenses with custom categories and amounts
+- **📊 Interactive Reports**  
+  View categorized spending summaries in real-time
+- **📤 CSV Export**  
+  Generate portable records for accounting/sharing
+- **🖥️ CLI Interface**  
+  User-friendly terminal interface with menu navigation
 
