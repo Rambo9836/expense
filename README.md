@@ -47,7 +47,7 @@ Get started by downloading the project from the repository:
 - **🔔 Budget Alerts**  
   Create configurable spending limit notifications with progress bars
 - **🔍 Advanced Filtering**  
-  Add date ranges, category combinations, and custom tags for granular reporting.
+  Add date ranges, category combinations, and custom tags for granular reporting
 
 ```rust
 // Potential Future Method Prototype
