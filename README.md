@@ -15,7 +15,7 @@ A CLI-based expense tracker that logs daily or monthly spending with categories 
 ## Download the Project
 Get started by downloading the project from the repository:
 
-[![View on GitHub](https://img.shields.io/badge/View%20on-GitHub-green?style=for-the-badge&logo=github)](https://github.com/Rambo9836/expense/blob/main/src/main.rs)
+[![View on GitHub(Code)](https://img.shields.io/badge/View%20on-GitHub-green?style=for-the-badge&logo=github)](https://github.com/Rambo9836/expense/blob/main/src/main.rs)
 
 [![Download Binary](https://img.shields.io/badge/Download-Binary-green?style=for-the-badge)](https://github.com/Rambo9836/expense/raw/refs/heads/main/expense_tracker)
 
