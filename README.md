@@ -19,7 +19,4 @@ Get started by downloading the project from the repository:
 
 [![Download Binary](https://img.shields.io/badge/Download-Binary-green?style=for-the-badge)](your-binary-download-link)
 
-## Installation & Setup
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/your-username/expense-tracker.git
+
